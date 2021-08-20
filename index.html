@@ -33,6 +33,7 @@
                 unified memory 256GB SSD storage Two Thunderbolt / USB 4 ports
                 Magic Mouse Magic Keyboard -US English
               </p>
+              <!-- memory button part -->
               <div class="memory mb-5">
                 <p class="fw-bold mb-1 pb-0">Memory</p>
                 <button id="memory1" class="btn border border-2 border-dark">
@@ -42,6 +43,7 @@
                   16GB unified memory
                 </button>
               </div>
+              <!-- storage button part -->
               <div class="storage mb-5">
                 <p class="fw-bold mb-1 pb-0">Storage</p>
                 <button id="storage1" class="btn border border-2 border-dark">
@@ -54,6 +56,7 @@
                   512GB SSD storage
                 </button>
               </div>
+              <!-- delivery button part -->
               <div class="delivery mb-5">
                 <p class="fw-bold mb-1 pb-0">Choose your delivery option</p>
                 <button id="delivery1" class="btn border border-2 border-dark">
@@ -63,6 +66,8 @@
                   Friday, Aug 21 Delivery charge $20
                 </button>
               </div>
+
+              <!-- calculation table -->
               <table class="table">
                 <tbody>
                   <tr>
@@ -92,20 +97,23 @@
                   <tr>
                     <th scope="row">Total Price</th>
                     <td class="fw-bold" colspan="1">
-                      $<span id="total-price">0</span>
+                      $<span id="total-price">1299</span>
                     </td>
                   </tr>
                 </tbody>
               </table>
-              <div class="mt-2 pt-0 mb-0 pb-0">
-                <p class="fw-bold mb-0">Add Promo Code</p>
-                <input id="promo-code" type="text" name="" id="" />
+
+              <!-- promo-code part -->
+              <div class="mt-2">
+                <p class="fw-bold mb-0 ms-1">Add Promo Code</p>
+                <input class="ms-1 mt-2" id="promo-code" type="text" name="" />
                 <button id="promo-button" class="btn btn-danger">Apply</button>
               </div>
             </div>
           </div>
         </div>
         <hr />
+        <!-- grand total part -->
         <div class="my-3 pb-3 text-center">
           <h1>Total: <span id="grand-total">1299</span>$</h1>
         </div>

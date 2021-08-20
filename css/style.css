@@ -1,4 +1,9 @@
 #promo-code {
   margin: 1px;
-  padding: 4px;
+  padding: 5px;
+  vertical-align: middle;
+}
+.btn:hover {
+  color: white;
+  background-color: black;
 }
