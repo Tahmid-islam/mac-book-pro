@@ -1,9 +1,9 @@
-#promo-code {
-  margin: 1px;
-  padding: 5px;
-  vertical-align: middle;
-}
 .btn:hover {
   color: white;
   background-color: black;
+}
+
+#promo-button:hover {
+  color: white;
+  background-color: #eb3749;
 }
