@@ -36,33 +36,61 @@
               <!-- memory button part -->
               <div class="memory mb-5">
                 <p class="fw-bold mb-1 pb-0">Memory</p>
-                <button id="memory1" class="btn border border-2 border-dark">
+                <button
+                  id="memory1"
+                  onclick="update('memory',0)"
+                  class="btn border border-2 border-dark"
+                >
                   8GB unified memory
                 </button>
-                <button id="memory2" class="btn border border-2 border-dark">
+                <button
+                  id="memory2"
+                  onclick="update('memory',180)"
+                  class="btn border border-2 border-dark"
+                >
                   16GB unified memory
                 </button>
               </div>
               <!-- storage button part -->
               <div class="storage mb-5">
                 <p class="fw-bold mb-1 pb-0">Storage</p>
-                <button id="storage1" class="btn border border-2 border-dark">
+                <button
+                  id="storage1"
+                  onclick="update('storage',0)"
+                  class="btn border border-2 border-dark"
+                >
                   256GB SSD storage
                 </button>
-                <button id="storage2" class="btn border border-2 border-dark">
+                <button
+                  id="storage2"
+                  onclick="update('storage',100)"
+                  class="btn border border-2 border-dark"
+                >
                   512GB SSD storage
                 </button>
-                <button id="storage3" class="btn border border-2 border-dark">
+                <button
+                  id="storage3"
+                  onclick="update('storage',180)"
+                  class="btn border border-2 border-dark"
+                >
                   512GB SSD storage
                 </button>
               </div>
               <!-- delivery button part -->
               <div class="delivery mb-5">
                 <p class="fw-bold mb-1 pb-0">Choose your delivery option</p>
-                <button id="delivery1" class="btn border border-2 border-dark">
+                <button
+                  id="delivery1"
+                  onclick="update('delivery',0)"
+                  class="btn border border-2 border-dark"
+                >
                   Friday, Aug 25 FREE Prime Delivery
                 </button>
-                <button id="delivery2" class="btn border border-2 border-dark">
+                <button
+                  id="delivery2"
+                  onclick="update('delivery',20)"
+                  class="btn border border-2 border-dark"
+                >
                   Friday, Aug 21 Delivery charge $20
                 </button>
               </div>
@@ -115,7 +143,7 @@
         <hr />
         <!-- grand total part -->
         <div class="my-3 pb-3 text-center">
-          <h1>Total: <span id="grand-total">1299</span>$</h1>
+          <h1>Total: <span id="grand-total-price">1299</span>$</h1>
         </div>
       </div>
     </body>
