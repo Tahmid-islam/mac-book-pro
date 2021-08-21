@@ -1,28 +1,27 @@
-// for get the id
-function getId(Id) {
+// function for get element for specific id
+function getElement(Id) {
   return document.getElementById(Id);
 }
-// update total price
+// function update total price
 function updateTotal() {
-  let memory = parseFloat(getId("memory-price").innerText);
-  let storage = parseFloat(getId("storage-price").innerText);
-  let delivery = parseFloat(getId("delivery-price").innerText);
-  let total = 1299 + memory + storage + delivery;
-  getId("total-price").innerText = total;
-  getId("grand-total-price").innerText = total;
+  let memoryCost = parseFloat(getElement("memory-price").innerText);
+  let storageCost = parseFloat(getElement("storage-price").innerText);
+  let deliveryCost = parseFloat(getElement("delivery-price").innerText);
+  let total = 1299 + memoryCost + storageCost + deliveryCost; /* total price sum */
+  getElement("total-price").innerText = total;
+  getElement("grand-total-price").innerText = total;
 }
-// on click function for every button
-function update(Id, price) {
-  document.getElementById(Id + "-price").innerText = price;
+// on click function for every price-id button
+function updatePrice(Id, price) {
+  getElement(Id + "-price").innerText = price;
   updateTotal();
 }
 // promo button functionality
-document.getElementById("promo-button").addEventListener("click", function () {
-  let price = parseFloat(getId("total-price").innerText);
-  let discount = (20 / 100) * price;
-  console.log(discount);
-  if (getId("promo-code").value.toLowerCase() == "stevekaku") {
-    getId("grand-total-price").innerText = price - discount;
-    getId("promo-code").value = "";
+getElement("promo-button").addEventListener("click", function () {
+  let price = parseFloat(getElement("total-price").innerText);
+  let discount = price * (20 / 100); /* 20% discount added */
+  if (getElement("promo-code").value.toLowerCase() == "stevekaku") {
+    getElement("grand-total-price").innerText = price - discount;
+    getElement("promo-code").value = "";
   }
 });
